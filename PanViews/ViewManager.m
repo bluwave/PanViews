@@ -33,7 +33,7 @@
     {
         self._baseView = baseView;
         self._leftView = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
-        
+        [_baseView addSubview:_leftView.view];
     }
     return self;
 }
