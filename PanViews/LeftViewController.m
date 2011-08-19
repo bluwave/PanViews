@@ -43,12 +43,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor clearColor];
     CGRect frame= [UIView getOrientationSizing];
+    
     frame.size.width = 320;
     self._tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
     self._tableView.backgroundColor = [UIColor lightGrayColor];
-    self._tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -65,6 +65,14 @@
     // Return YES for supported orientations
 	return YES;
 }
+-(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    CGRect frame = [UIView getOrientationSizing];
+//    NSLog(@"%@: %f %f", [UIView isOrienationPortait] ? @"port": @"land" ,frame.size.width, frame.size.height);
+    CGRect tFrame = _tableView.frame;
+    tFrame.size.height= frame.size.height;
+    _tableView.frame = tFrame;
+}
 
 
 #pragma mark - Table view data source
@@ -76,7 +84,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 30;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

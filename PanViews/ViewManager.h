@@ -15,5 +15,5 @@
 
 -(void) pushView:(PannableViewController *) view;
 
--(void) notifyViewsOfRotationWithDuration:(NSTimeInterval)duration;
+-(void) notifyViewsOfOrientationChange;
 @end

@@ -17,7 +17,9 @@
 @synthesize _viewManager;
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [_viewManager dealloc];
+
     [super dealloc];
 }
 
@@ -25,7 +27,7 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -35,6 +37,10 @@
 {
     [super viewDidLoad];
     self._viewManager= [[ViewManager alloc] initWithBaseView:self.view];
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
+
 }
 
 
@@ -50,9 +56,16 @@
     // Return YES for supported orientations
     return YES;
 }
--(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+
+- (void)orientationChanged:(NSNotification *)notification
 {
-    [_viewManager notifyViewsOfRotationWithDuration:duration];
+    [self performSelector:@selector(rotateTheScreen) withObject:nil afterDelay:0];
 }
+
+- (void) rotateTheScreen
+{
+    [_viewManager notifyViewsOfOrientationChange];
+}
+
 
 @end
