@@ -50,5 +50,9 @@
     // Return YES for supported orientations
     return YES;
 }
+-(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [_viewManager notifyViewsOfRotationWithDuration:duration];
+}
 
 @end

@@ -43,4 +43,12 @@
     
 }
 
+-(void) notifyViewsOfRotationWithDuration:(NSTimeInterval)duration;
+{
+    [_leftView willRotateToInterfaceOrientation:[UIApplication sharedApplication].statusBarOrientation duration:duration];
+    for(PannableViewController * pv in _views)
+    {
+        [pv willRotateToInterfaceOrientation:[UIApplication sharedApplication].statusBarOrientation duration:duration];
+    }
+}
 @end

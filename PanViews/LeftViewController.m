@@ -7,6 +7,7 @@
 //
 
 #import "LeftViewController.h"
+#import "UIView+Orientation.h"
 
 @interface LeftViewController()
 @property(retain,nonatomic) UITableView * _tableView;
@@ -42,8 +43,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self._tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 768) style:UITableViewStylePlain];
+
+    CGRect frame= [UIView getOrientationSizing];
+    frame.size.width = 320;
+    self._tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
     self._tableView.backgroundColor = [UIColor lightGrayColor];
+    self._tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];

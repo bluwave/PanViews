@@ -18,4 +18,6 @@
 
 @property (nonatomic, retain) IBOutlet BaseViewContainer *viewController;
 
+
++(PanViewsAppDelegate *) instance;
 @end

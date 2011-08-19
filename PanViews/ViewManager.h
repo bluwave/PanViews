@@ -14,4 +14,6 @@
 -(id) initWithBaseView:(UIView*) baseView;
 
 -(void) pushView:(PannableViewController *) view;
+
+-(void) notifyViewsOfRotationWithDuration:(NSTimeInterval)duration;
 @end

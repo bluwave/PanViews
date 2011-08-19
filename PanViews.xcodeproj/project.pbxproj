@@ -26,6 +26,7 @@
 		554BAC1A13FEEF8200A89CC0 /* PanViewsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 554BAC1913FEEF8200A89CC0 /* PanViewsTests.h */; };
 		554BAC1C13FEEF8200A89CC0 /* PanViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */; };
 		554BAC2413FEEF8200A89CC2 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC2413FEEF8200A89CC1 /* ViewManager.m */; };
+		55C2E32113FF013400E47769 /* UIView+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C2E32013FF013400E47769 /* UIView+Orientation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,23 +50,25 @@
 		554BABEE13FEEF8200A89CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		554BABF013FEEF8200A89CC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		554BABF413FEEF8200A89CC0 /* PanViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanViews-Info.plist"; sourceTree = "<group>"; };
-		554BABF613FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		554BABF613FEEF8200A89CC0 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		554BABF813FEEF8200A89CC0 /* PanViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanViews-Prefix.pch"; sourceTree = "<group>"; };
 		554BABF913FEEF8200A89CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		554BABFB13FEEF8200A89CC0 /* PanViewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsAppDelegate.h; sourceTree = "<group>"; };
 		554BABFC13FEEF8200A89CC0 /* PanViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsAppDelegate.m; sourceTree = "<group>"; };
-		554BABFF13FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		554BABFF13FEEF8200A89CC0 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		554BAC0113FEEF8200A89CC0 /* BaseViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewContainer.h; sourceTree = "<group>"; };
 		554BAC0213FEEF8200A89CC0 /* BaseViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewContainer.m; sourceTree = "<group>"; };
-		554BAC0513FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PanViewsViewController.xib; sourceTree = "<group>"; };
+		554BAC0513FEEF8200A89CC0 /* PanViewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PanViewsViewController.xib; path = en.lproj/PanViewsViewController.xib; sourceTree = "<group>"; };
 		554BAC0C13FEEF8200A89CC0 /* PanViewsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanViewsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554BAC1413FEEF8200A89CC0 /* PanViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanViewsTests-Info.plist"; sourceTree = "<group>"; };
-		554BAC1613FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		554BAC1613FEEF8200A89CC0 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		554BAC1813FEEF8200A89CC0 /* PanViewsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanViewsTests-Prefix.pch"; sourceTree = "<group>"; };
 		554BAC1913FEEF8200A89CC0 /* PanViewsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsTests.h; sourceTree = "<group>"; };
 		554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsTests.m; sourceTree = "<group>"; };
 		554BAC2413FEEF8200A89CC1 /* ViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewManager.m; sourceTree = "<group>"; };
 		554BAC2413FEEF8200A89CC3 /* ViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
+		55C2E31F13FF013400E47769 /* UIView+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Orientation.h"; sourceTree = "<group>"; };
+		55C2E32013FF013400E47769 /* UIView+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Orientation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 		554BABF213FEEF8200A89CC0 /* PanViews */ = {
 			isa = PBXGroup;
 			children = (
+				55C2E31F13FF013400E47769 /* UIView+Orientation.h */,
+				55C2E32013FF013400E47769 /* UIView+Orientation.m */,
 				554BAC2413FEEF8200A89CC3 /* ViewManager.h */,
 				554BAC2413FEEF8200A89CC1 /* ViewManager.m */,
 				554BABFB13FEEF8200A89CC0 /* PanViewsAppDelegate.h */,
@@ -285,6 +290,7 @@
 				554BAC2413FEEF8200A89CC2 /* ViewManager.m in Sources */,
 				553C583F13FEF419000D82CC /* PannableViewController.m in Sources */,
 				553C584413FEF525000D82CC /* LeftViewController.m in Sources */,
+				55C2E32113FF013400E47769 /* UIView+Orientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +316,7 @@
 		554BABF513FEEF8200A89CC0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				554BABF613FEEF8200A89CC0 /* en */,
+				554BABF613FEEF8200A89CC0 /* InfoPlist.strings */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -318,7 +324,7 @@
 		554BABFE13FEEF8200A89CC0 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				554BABFF13FEEF8200A89CC0 /* en */,
+				554BABFF13FEEF8200A89CC0 /* MainWindow.xib */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
@@ -326,7 +332,7 @@
 		554BAC0413FEEF8200A89CC0 /* PanViewsViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				554BAC0513FEEF8200A89CC0 /* en */,
+				554BAC0513FEEF8200A89CC0 /* PanViewsViewController.xib */,
 			);
 			name = PanViewsViewController.xib;
 			sourceTree = "<group>";
@@ -334,7 +340,7 @@
 		554BAC1513FEEF8200A89CC0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				554BAC1613FEEF8200A89CC0 /* en */,
+				554BAC1613FEEF8200A89CC0 /* InfoPlist.strings */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

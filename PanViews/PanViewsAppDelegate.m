@@ -72,4 +72,11 @@
     [super dealloc];
 }
 
++(PanViewsAppDelegate *) instance
+{
+    return (PanViewsAppDelegate*) [UIApplication sharedApplication].delegate;
+}
+
+
+
 @end
