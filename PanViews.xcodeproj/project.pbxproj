@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		553C583F13FEF419000D82CC /* PannableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C583E13FEF419000D82CC /* PannableViewController.m */; };
+		553C584413FEF525000D82CC /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C584213FEF525000D82CC /* LeftViewController.m */; };
+		553C584513FEF525000D82CC /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553C584313FEF525000D82CC /* LeftViewController.xib */; };
 		554BABED13FEEF8200A89CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEC13FEEF8200A89CC0 /* UIKit.framework */; };
 		554BABEF13FEEF8200A89CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEE13FEEF8200A89CC0 /* Foundation.framework */; };
 		554BABF113FEEF8200A89CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABF013FEEF8200A89CC0 /* CoreGraphics.framework */; };
@@ -14,7 +17,7 @@
 		554BABFA13FEEF8200A89CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BABF913FEEF8200A89CC0 /* main.m */; };
 		554BABFD13FEEF8200A89CC0 /* PanViewsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BABFC13FEEF8200A89CC0 /* PanViewsAppDelegate.m */; };
 		554BAC0013FEEF8200A89CC0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554BABFE13FEEF8200A89CC0 /* MainWindow.xib */; };
-		554BAC0313FEEF8200A89CC0 /* PanViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC0213FEEF8200A89CC0 /* PanViewsViewController.m */; };
+		554BAC0313FEEF8200A89CC0 /* BaseViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC0213FEEF8200A89CC0 /* BaseViewContainer.m */; };
 		554BAC0613FEEF8200A89CC0 /* PanViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554BAC0413FEEF8200A89CC0 /* PanViewsViewController.xib */; };
 		554BAC0D13FEEF8200A89CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEC13FEEF8200A89CC0 /* UIKit.framework */; };
 		554BAC0E13FEEF8200A89CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEE13FEEF8200A89CC0 /* Foundation.framework */; };
@@ -22,6 +25,7 @@
 		554BAC1713FEEF8200A89CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554BAC1513FEEF8200A89CC0 /* InfoPlist.strings */; };
 		554BAC1A13FEEF8200A89CC0 /* PanViewsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 554BAC1913FEEF8200A89CC0 /* PanViewsTests.h */; };
 		554BAC1C13FEEF8200A89CC0 /* PanViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */; };
+		554BAC2413FEEF8200A89CC2 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC2413FEEF8200A89CC1 /* ViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		553C583D13FEF419000D82CC /* PannableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PannableViewController.h; sourceTree = "<group>"; };
+		553C583E13FEF419000D82CC /* PannableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PannableViewController.m; sourceTree = "<group>"; };
+		553C584113FEF525000D82CC /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		553C584213FEF525000D82CC /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		553C584313FEF525000D82CC /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		554BABE813FEEF8200A89CC0 /* PanViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554BABEC13FEEF8200A89CC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		554BABEE13FEEF8200A89CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,8 +55,8 @@
 		554BABFB13FEEF8200A89CC0 /* PanViewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsAppDelegate.h; sourceTree = "<group>"; };
 		554BABFC13FEEF8200A89CC0 /* PanViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsAppDelegate.m; sourceTree = "<group>"; };
 		554BABFF13FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		554BAC0113FEEF8200A89CC0 /* PanViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsViewController.h; sourceTree = "<group>"; };
-		554BAC0213FEEF8200A89CC0 /* PanViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsViewController.m; sourceTree = "<group>"; };
+		554BAC0113FEEF8200A89CC0 /* BaseViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewContainer.h; sourceTree = "<group>"; };
+		554BAC0213FEEF8200A89CC0 /* BaseViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewContainer.m; sourceTree = "<group>"; };
 		554BAC0513FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PanViewsViewController.xib; sourceTree = "<group>"; };
 		554BAC0C13FEEF8200A89CC0 /* PanViewsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanViewsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554BAC1413FEEF8200A89CC0 /* PanViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanViewsTests-Info.plist"; sourceTree = "<group>"; };
@@ -55,6 +64,8 @@
 		554BAC1813FEEF8200A89CC0 /* PanViewsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanViewsTests-Prefix.pch"; sourceTree = "<group>"; };
 		554BAC1913FEEF8200A89CC0 /* PanViewsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsTests.h; sourceTree = "<group>"; };
 		554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsTests.m; sourceTree = "<group>"; };
+		554BAC2413FEEF8200A89CC1 /* ViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewManager.m; sourceTree = "<group>"; };
+		554BAC2413FEEF8200A89CC3 /* ViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +124,20 @@
 		554BABF213FEEF8200A89CC0 /* PanViews */ = {
 			isa = PBXGroup;
 			children = (
+				554BAC2413FEEF8200A89CC3 /* ViewManager.h */,
+				554BAC2413FEEF8200A89CC1 /* ViewManager.m */,
 				554BABFB13FEEF8200A89CC0 /* PanViewsAppDelegate.h */,
 				554BABFC13FEEF8200A89CC0 /* PanViewsAppDelegate.m */,
 				554BABFE13FEEF8200A89CC0 /* MainWindow.xib */,
-				554BAC0113FEEF8200A89CC0 /* PanViewsViewController.h */,
-				554BAC0213FEEF8200A89CC0 /* PanViewsViewController.m */,
+				554BAC0113FEEF8200A89CC0 /* BaseViewContainer.h */,
+				554BAC0213FEEF8200A89CC0 /* BaseViewContainer.m */,
 				554BAC0413FEEF8200A89CC0 /* PanViewsViewController.xib */,
 				554BABF313FEEF8200A89CC0 /* Supporting Files */,
+				553C583D13FEF419000D82CC /* PannableViewController.h */,
+				553C583E13FEF419000D82CC /* PannableViewController.m */,
+				553C584113FEF525000D82CC /* LeftViewController.h */,
+				553C584213FEF525000D82CC /* LeftViewController.m */,
+				553C584313FEF525000D82CC /* LeftViewController.xib */,
 			);
 			path = PanViews;
 			sourceTree = "<group>";
@@ -225,6 +243,7 @@
 				554BABF713FEEF8200A89CC0 /* InfoPlist.strings in Resources */,
 				554BAC0013FEEF8200A89CC0 /* MainWindow.xib in Resources */,
 				554BAC0613FEEF8200A89CC0 /* PanViewsViewController.xib in Resources */,
+				553C584513FEF525000D82CC /* LeftViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +281,10 @@
 			files = (
 				554BABFA13FEEF8200A89CC0 /* main.m in Sources */,
 				554BABFD13FEEF8200A89CC0 /* PanViewsAppDelegate.m in Sources */,
-				554BAC0313FEEF8200A89CC0 /* PanViewsViewController.m in Sources */,
+				554BAC0313FEEF8200A89CC0 /* BaseViewContainer.m in Sources */,
+				554BAC2413FEEF8200A89CC2 /* ViewManager.m in Sources */,
+				553C583F13FEF419000D82CC /* PannableViewController.m in Sources */,
+				553C584413FEF525000D82CC /* LeftViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +469,7 @@
 				554BAC2113FEEF8200A89CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		554BAC2213FEEF8200A89CC0 /* Build configuration list for PBXNativeTarget "PanViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +478,7 @@
 				554BAC2413FEEF8200A89CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

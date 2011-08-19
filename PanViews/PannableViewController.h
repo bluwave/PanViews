@@ -1,5 +1,5 @@
 //
-//  PanViewsViewController.h
+//  PannableViewController.h
 //  PanViews
 //
 //  Created by slim on 8/19/11.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PanViewsViewController : UIViewController {
+
+@interface PannableViewController : UIViewController {
     
 }
 

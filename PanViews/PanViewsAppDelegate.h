@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class PanViewsViewController;
+@class BaseViewContainer;
 
 @interface PanViewsAppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -16,6 +16,6 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet PanViewsViewController *viewController;
+@property (nonatomic, retain) IBOutlet BaseViewContainer *viewController;
 
 @end

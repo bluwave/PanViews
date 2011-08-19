@@ -8,7 +8,7 @@
 
 #import "PanViewsAppDelegate.h"
 
-#import "PanViewsViewController.h"
+#import "BaseViewContainer.h"
 
 @implementation PanViewsAppDelegate
 
