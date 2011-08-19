@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		554BABED13FEEF8200A89CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEC13FEEF8200A89CC0 /* UIKit.framework */; };
+		554BABEF13FEEF8200A89CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEE13FEEF8200A89CC0 /* Foundation.framework */; };
+		554BABF113FEEF8200A89CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABF013FEEF8200A89CC0 /* CoreGraphics.framework */; };
+		554BABF713FEEF8200A89CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554BABF513FEEF8200A89CC0 /* InfoPlist.strings */; };
+		554BABFA13FEEF8200A89CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BABF913FEEF8200A89CC0 /* main.m */; };
+		554BABFD13FEEF8200A89CC0 /* PanViewsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BABFC13FEEF8200A89CC0 /* PanViewsAppDelegate.m */; };
+		554BAC0013FEEF8200A89CC0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554BABFE13FEEF8200A89CC0 /* MainWindow.xib */; };
+		554BAC0313FEEF8200A89CC0 /* PanViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC0213FEEF8200A89CC0 /* PanViewsViewController.m */; };
+		554BAC0613FEEF8200A89CC0 /* PanViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554BAC0413FEEF8200A89CC0 /* PanViewsViewController.xib */; };
+		554BAC0D13FEEF8200A89CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEC13FEEF8200A89CC0 /* UIKit.framework */; };
+		554BAC0E13FEEF8200A89CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABEE13FEEF8200A89CC0 /* Foundation.framework */; };
+		554BAC0F13FEEF8200A89CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BABF013FEEF8200A89CC0 /* CoreGraphics.framework */; };
+		554BAC1713FEEF8200A89CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554BAC1513FEEF8200A89CC0 /* InfoPlist.strings */; };
+		554BAC1A13FEEF8200A89CC0 /* PanViewsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 554BAC1913FEEF8200A89CC0 /* PanViewsTests.h */; };
+		554BAC1C13FEEF8200A89CC0 /* PanViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554BAC1013FEEF8200A89CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554BABDF13FEEF8200A89CC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554BABE713FEEF8200A89CC0;
+			remoteInfo = PanViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		554BABE813FEEF8200A89CC0 /* PanViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		554BABEC13FEEF8200A89CC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		554BABEE13FEEF8200A89CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		554BABF013FEEF8200A89CC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		554BABF413FEEF8200A89CC0 /* PanViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanViews-Info.plist"; sourceTree = "<group>"; };
+		554BABF613FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		554BABF813FEEF8200A89CC0 /* PanViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanViews-Prefix.pch"; sourceTree = "<group>"; };
+		554BABF913FEEF8200A89CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		554BABFB13FEEF8200A89CC0 /* PanViewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsAppDelegate.h; sourceTree = "<group>"; };
+		554BABFC13FEEF8200A89CC0 /* PanViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsAppDelegate.m; sourceTree = "<group>"; };
+		554BABFF13FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		554BAC0113FEEF8200A89CC0 /* PanViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsViewController.h; sourceTree = "<group>"; };
+		554BAC0213FEEF8200A89CC0 /* PanViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsViewController.m; sourceTree = "<group>"; };
+		554BAC0513FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PanViewsViewController.xib; sourceTree = "<group>"; };
+		554BAC0C13FEEF8200A89CC0 /* PanViewsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanViewsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554BAC1413FEEF8200A89CC0 /* PanViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanViewsTests-Info.plist"; sourceTree = "<group>"; };
+		554BAC1613FEEF8200A89CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		554BAC1813FEEF8200A89CC0 /* PanViewsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanViewsTests-Prefix.pch"; sourceTree = "<group>"; };
+		554BAC1913FEEF8200A89CC0 /* PanViewsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewsTests.h; sourceTree = "<group>"; };
+		554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		554BABE513FEEF8200A89CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554BABED13FEEF8200A89CC0 /* UIKit.framework in Frameworks */,
+				554BABEF13FEEF8200A89CC0 /* Foundation.framework in Frameworks */,
+				554BABF113FEEF8200A89CC0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554BAC0813FEEF8200A89CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554BAC0D13FEEF8200A89CC0 /* UIKit.framework in Frameworks */,
+				554BAC0E13FEEF8200A89CC0 /* Foundation.framework in Frameworks */,
+				554BAC0F13FEEF8200A89CC0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		554BABDD13FEEF8200A89CC0 = {
+			isa = PBXGroup;
+			children = (
+				554BABF213FEEF8200A89CC0 /* PanViews */,
+				554BAC1213FEEF8200A89CC0 /* PanViewsTests */,
+				554BABEB13FEEF8200A89CC0 /* Frameworks */,
+				554BABE913FEEF8200A89CC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		554BABE913FEEF8200A89CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				554BABE813FEEF8200A89CC0 /* PanViews.app */,
+				554BAC0C13FEEF8200A89CC0 /* PanViewsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		554BABEB13FEEF8200A89CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				554BABEC13FEEF8200A89CC0 /* UIKit.framework */,
+				554BABEE13FEEF8200A89CC0 /* Foundation.framework */,
+				554BABF013FEEF8200A89CC0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		554BABF213FEEF8200A89CC0 /* PanViews */ = {
+			isa = PBXGroup;
+			children = (
+				554BABFB13FEEF8200A89CC0 /* PanViewsAppDelegate.h */,
+				554BABFC13FEEF8200A89CC0 /* PanViewsAppDelegate.m */,
+				554BABFE13FEEF8200A89CC0 /* MainWindow.xib */,
+				554BAC0113FEEF8200A89CC0 /* PanViewsViewController.h */,
+				554BAC0213FEEF8200A89CC0 /* PanViewsViewController.m */,
+				554BAC0413FEEF8200A89CC0 /* PanViewsViewController.xib */,
+				554BABF313FEEF8200A89CC0 /* Supporting Files */,
+			);
+			path = PanViews;
+			sourceTree = "<group>";
+		};
+		554BABF313FEEF8200A89CC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				554BABF413FEEF8200A89CC0 /* PanViews-Info.plist */,
+				554BABF513FEEF8200A89CC0 /* InfoPlist.strings */,
+				554BABF813FEEF8200A89CC0 /* PanViews-Prefix.pch */,
+				554BABF913FEEF8200A89CC0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		554BAC1213FEEF8200A89CC0 /* PanViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				554BAC1913FEEF8200A89CC0 /* PanViewsTests.h */,
+				554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */,
+				554BAC1313FEEF8200A89CC0 /* Supporting Files */,
+			);
+			path = PanViewsTests;
+			sourceTree = "<group>";
+		};
+		554BAC1313FEEF8200A89CC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				554BAC1413FEEF8200A89CC0 /* PanViewsTests-Info.plist */,
+				554BAC1513FEEF8200A89CC0 /* InfoPlist.strings */,
+				554BAC1813FEEF8200A89CC0 /* PanViewsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		554BABE713FEEF8200A89CC0 /* PanViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554BAC1F13FEEF8200A89CC0 /* Build configuration list for PBXNativeTarget "PanViews" */;
+			buildPhases = (
+				554BABE413FEEF8200A89CC0 /* Sources */,
+				554BABE513FEEF8200A89CC0 /* Frameworks */,
+				554BABE613FEEF8200A89CC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PanViews;
+			productName = PanViews;
+			productReference = 554BABE813FEEF8200A89CC0 /* PanViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		554BAC0B13FEEF8200A89CC0 /* PanViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554BAC2213FEEF8200A89CC0 /* Build configuration list for PBXNativeTarget "PanViewsTests" */;
+			buildPhases = (
+				554BAC0713FEEF8200A89CC0 /* Sources */,
+				554BAC0813FEEF8200A89CC0 /* Frameworks */,
+				554BAC0913FEEF8200A89CC0 /* Resources */,
+				554BAC0A13FEEF8200A89CC0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554BAC1113FEEF8200A89CC0 /* PBXTargetDependency */,
+			);
+			name = PanViewsTests;
+			productName = PanViewsTests;
+			productReference = 554BAC0C13FEEF8200A89CC0 /* PanViewsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		554BABDF13FEEF8200A89CC0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 554BABE213FEEF8200A89CC0 /* Build configuration list for PBXProject "PanViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 554BABDD13FEEF8200A89CC0;
+			productRefGroup = 554BABE913FEEF8200A89CC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				554BABE713FEEF8200A89CC0 /* PanViews */,
+				554BAC0B13FEEF8200A89CC0 /* PanViewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		554BABE613FEEF8200A89CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554BABF713FEEF8200A89CC0 /* InfoPlist.strings in Resources */,
+				554BAC0013FEEF8200A89CC0 /* MainWindow.xib in Resources */,
+				554BAC0613FEEF8200A89CC0 /* PanViewsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554BAC0913FEEF8200A89CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554BAC1713FEEF8200A89CC0 /* InfoPlist.strings in Resources */,
+				554BAC1A13FEEF8200A89CC0 /* PanViewsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554BAC0A13FEEF8200A89CC0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		554BABE413FEEF8200A89CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554BABFA13FEEF8200A89CC0 /* main.m in Sources */,
+				554BABFD13FEEF8200A89CC0 /* PanViewsAppDelegate.m in Sources */,
+				554BAC0313FEEF8200A89CC0 /* PanViewsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554BAC0713FEEF8200A89CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554BAC1C13FEEF8200A89CC0 /* PanViewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554BAC1113FEEF8200A89CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554BABE713FEEF8200A89CC0 /* PanViews */;
+			targetProxy = 554BAC1013FEEF8200A89CC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		554BABF513FEEF8200A89CC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554BABF613FEEF8200A89CC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		554BABFE13FEEF8200A89CC0 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554BABFF13FEEF8200A89CC0 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		554BAC0413FEEF8200A89CC0 /* PanViewsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554BAC0513FEEF8200A89CC0 /* en */,
+			);
+			name = PanViewsViewController.xib;
+			sourceTree = "<group>";
+		};
+		554BAC1513FEEF8200A89CC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554BAC1613FEEF8200A89CC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		554BAC1D13FEEF8200A89CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		554BAC1E13FEEF8200A89CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		554BAC2013FEEF8200A89CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanViews/PanViews-Prefix.pch";
+				INFOPLIST_FILE = "PanViews/PanViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		554BAC2113FEEF8200A89CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanViews/PanViews-Prefix.pch";
+				INFOPLIST_FILE = "PanViews/PanViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		554BAC2313FEEF8200A89CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PanViews.app/PanViews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanViewsTests/PanViewsTests-Prefix.pch";
+				INFOPLIST_FILE = "PanViewsTests/PanViewsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		554BAC2413FEEF8200A89CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PanViews.app/PanViews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanViewsTests/PanViewsTests-Prefix.pch";
+				INFOPLIST_FILE = "PanViewsTests/PanViewsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		554BABE213FEEF8200A89CC0 /* Build configuration list for PBXProject "PanViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554BAC1D13FEEF8200A89CC0 /* Debug */,
+				554BAC1E13FEEF8200A89CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554BAC1F13FEEF8200A89CC0 /* Build configuration list for PBXNativeTarget "PanViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554BAC2013FEEF8200A89CC0 /* Debug */,
+				554BAC2113FEEF8200A89CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		554BAC2213FEEF8200A89CC0 /* Build configuration list for PBXNativeTarget "PanViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554BAC2313FEEF8200A89CC0 /* Debug */,
+				554BAC2413FEEF8200A89CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 554BABDF13FEEF8200A89CC0 /* Project object */;
+}
