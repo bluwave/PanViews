@@ -1,5 +1,5 @@
 //
-//  BaseViewContainer.h
+//  CustomPannableA.h
 //  PanViews
 //
 //  Created by slim on 8/19/11.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewManager.h"
+#import "PannableViewController.h"
 
-@interface BaseViewContainer : UIViewController {
+@interface CustomPannableA : PannableViewController {
     
 }
--(ViewManager*) getViewManager;
+
 @end

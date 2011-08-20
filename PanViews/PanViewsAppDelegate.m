@@ -8,7 +8,7 @@
 
 #import "PanViewsAppDelegate.h"
 
-#import "BaseViewContainer.h"
+
 
 @implementation PanViewsAppDelegate
 
@@ -76,7 +76,15 @@
 {
     return (PanViewsAppDelegate*) [UIApplication sharedApplication].delegate;
 }
+-(ViewManager *) getViewManager
+{
+    return [self.viewController getViewManager];
+}
 
+-(UIView*) getBaseView
+{
+    return self.viewController.view;
+}
 
 
 @end

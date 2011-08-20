@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BaseViewContainer.h"
 @class BaseViewContainer;
 
 @interface PanViewsAppDelegate : NSObject <UIApplicationDelegate> {
@@ -20,4 +20,6 @@
 
 
 +(PanViewsAppDelegate *) instance;
+-(ViewManager *) getViewManager;
+-(UIView*) getBaseView;
 @end

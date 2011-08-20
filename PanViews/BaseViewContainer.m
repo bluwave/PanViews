@@ -67,5 +67,9 @@
     [_viewManager notifyViewsOfOrientationChange];
 }
 
+-(ViewManager*) getViewManager
+{
+    return _viewManager;
+}
 
 @end

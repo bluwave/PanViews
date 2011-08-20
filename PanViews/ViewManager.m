@@ -31,6 +31,7 @@
     self = [super init];
     if (self) 
     {
+        self._views = [[NSMutableArray alloc] init];
         self._baseView = baseView;
         self._leftView = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
         [_baseView addSubview:_leftView.view];
@@ -41,6 +42,11 @@
 -(void) pushView:(PannableViewController *) view
 {
     
+    NSLog(@"[push] %@", view);
+    [_views addObject:view];
+    view.viewIndexInStack = [_views count];
+    [_baseView addSubview:view.view];
+
 }
 
 -(void) notifyViewsOfOrientationChange
@@ -50,5 +56,9 @@
     {
         [pv willRotateToInterfaceOrientation:[UIApplication sharedApplication].statusBarOrientation duration:0.0];
     }
+}
+-(int) getViewsInStack
+{
+    return [_views count];
 }
 @end

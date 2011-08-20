@@ -8,6 +8,8 @@
 
 #import "LeftViewController.h"
 #import "UIView+Orientation.h"
+#import "CustomPannableA.h"
+#import "PanViewsAppDelegate.h"
 
 @interface LeftViewController()
 @property(retain,nonatomic) UITableView * _tableView;
@@ -46,9 +48,16 @@
     self.view.backgroundColor = [UIColor clearColor];
     CGRect frame= [UIView getOrientationSizing];
     
+    CGRect vFrame = self.view.frame;
+    vFrame.size.width = 320;
+    vFrame.size.height = frame.size.height;
+    self.view.frame = vFrame;
+    
+    
     frame.size.width = 320;
     self._tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
     self._tableView.backgroundColor = [UIColor lightGrayColor];
+    self._tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -68,10 +77,16 @@
 -(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     CGRect frame = [UIView getOrientationSizing];
-//    NSLog(@"%@: %f %f", [UIView isOrienationPortait] ? @"port": @"land" ,frame.size.width, frame.size.height);
-    CGRect tFrame = _tableView.frame;
-    tFrame.size.height= frame.size.height;
-    _tableView.frame = tFrame;
+    NSLog(@"%@: %f %f", [UIView isOrienationPortait] ? @"port": @"land" ,frame.size.width, frame.size.height);
+    CGRect vFrame =self.view.frame;
+
+    vFrame.size.height= frame.size.height;
+    self.view.frame = vFrame;    
+    
+    
+//    CGRect tFrame = _tableView.frame;
+//    tFrame.size.height= frame.size.height;
+//    _tableView.frame = tFrame;
 }
 
 
@@ -103,6 +118,10 @@
 {
     NSLog(@"row clicked");
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    CustomPannableA * view = [[CustomPannableA alloc] initWithNibName:@"CustomPannableA" bundle:nil];
+    [[[PanViewsAppDelegate instance] getViewManager] pushView:view]; 
+    [view release];
 }
 
 @end

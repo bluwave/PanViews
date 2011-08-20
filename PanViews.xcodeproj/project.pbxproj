@@ -27,6 +27,8 @@
 		554BAC1C13FEEF8200A89CC0 /* PanViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC1B13FEEF8200A89CC0 /* PanViewsTests.m */; };
 		554BAC2413FEEF8200A89CC2 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BAC2413FEEF8200A89CC1 /* ViewManager.m */; };
 		55C2E32113FF013400E47769 /* UIView+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C2E32013FF013400E47769 /* UIView+Orientation.m */; };
+		55D0E8AF13FF15AD00AC0311 /* CustomPannableA.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D0E8AD13FF15AD00AC0311 /* CustomPannableA.m */; };
+		55D0E8B013FF15AD00AC0311 /* CustomPannableA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D0E8AE13FF15AD00AC0311 /* CustomPannableA.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 		554BAC2413FEEF8200A89CC3 /* ViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
 		55C2E31F13FF013400E47769 /* UIView+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Orientation.h"; sourceTree = "<group>"; };
 		55C2E32013FF013400E47769 /* UIView+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Orientation.m"; sourceTree = "<group>"; };
+		55D0E8AC13FF15AD00AC0311 /* CustomPannableA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPannableA.h; sourceTree = "<group>"; };
+		55D0E8AD13FF15AD00AC0311 /* CustomPannableA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPannableA.m; sourceTree = "<group>"; };
+		55D0E8AE13FF15AD00AC0311 /* CustomPannableA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPannableA.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +148,9 @@
 				553C584113FEF525000D82CC /* LeftViewController.h */,
 				553C584213FEF525000D82CC /* LeftViewController.m */,
 				553C584313FEF525000D82CC /* LeftViewController.xib */,
+				55D0E8AC13FF15AD00AC0311 /* CustomPannableA.h */,
+				55D0E8AD13FF15AD00AC0311 /* CustomPannableA.m */,
+				55D0E8AE13FF15AD00AC0311 /* CustomPannableA.xib */,
 			);
 			path = PanViews;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 				554BAC0013FEEF8200A89CC0 /* MainWindow.xib in Resources */,
 				554BAC0613FEEF8200A89CC0 /* PanViewsViewController.xib in Resources */,
 				553C584513FEF525000D82CC /* LeftViewController.xib in Resources */,
+				55D0E8B013FF15AD00AC0311 /* CustomPannableA.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +300,7 @@
 				553C583F13FEF419000D82CC /* PannableViewController.m in Sources */,
 				553C584413FEF525000D82CC /* LeftViewController.m in Sources */,
 				55C2E32113FF013400E47769 /* UIView+Orientation.m in Sources */,
+				55D0E8AF13FF15AD00AC0311 /* CustomPannableA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

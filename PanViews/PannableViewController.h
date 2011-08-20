@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+Orientation.h"
 
 
-@interface PannableViewController : UIViewController {
-    
+@interface PannableViewController : UIViewController<UIGestureRecognizerDelegate> {
+    CGFloat firstX;
+    CGFloat firstY;
+    int viewIndexInStack;
 }
 
+@property int viewIndexInStack;
 @end

@@ -16,4 +16,6 @@
 -(void) pushView:(PannableViewController *) view;
 
 -(void) notifyViewsOfOrientationChange;
+
+-(int) getViewsInStack;
 @end
