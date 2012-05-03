@@ -31,9 +31,9 @@
     self = [super init];
     if (self) 
     {
-        self._views = [[NSMutableArray alloc] init];
+        self._views = [[[NSMutableArray alloc] init] autorelease];
         self._baseView = baseView;
-        self._leftView = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
+        self._leftView = [[[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil] autorelease];
         [_baseView addSubview:_leftView.view];
     }
     return self;

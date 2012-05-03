@@ -55,7 +55,7 @@
     
     
     frame.size.width = 320;
-    self._tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+    self._tableView = [[[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain] autorelease];
     self._tableView.backgroundColor = [UIColor lightGrayColor];
     self._tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     _tableView.delegate = self;
